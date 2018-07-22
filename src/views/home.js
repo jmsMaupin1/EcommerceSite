@@ -4,12 +4,18 @@ import styled from 'styled-components';
 // Components
 import Carousel from '../components/carousel';
 import Header from '../components/header';
-
+import ProductSquare from '../components/productsquare'
 // Carousel Slide Assets
 import IjoyZenth3Banner from '../assets/carouselslides/ijoy-zenth3-banner.jpg';
 import PolarModBanner from '../assets/carouselslides/polar-mod-banner.jpg';
 import SmallTobaccoBanner from '../assets/carouselslides/small-tobacco-banner.jpg';
 import SolaceBanner from '../assets/carouselslides/solace-banner.jpg';
+
+// Product Square Assets
+import smokDevlinFullKit from '../assets/productphotos/smok-devlin-full-kit.jpg';
+import smokGPBaby from '../assets/productphotos/smok-gp-baby.jpg';
+import smokPenPrinceStarterKit from '../assets/productphotos/smok-pen-prince-starter-kit.jpg';
+import smokPenStarterKit from '../assets/productphotos/smok-pen-starter-kit.jpg';
 
 const Slide = styled.div`
 	width: 100%;
@@ -95,6 +101,15 @@ export default class Home extends Component {
 						<img src={SolaceBanner} alt=""/>
 					</Slide>
 				</Carousel>
+				<Grid>
+					<ProductSquare title={"Smok Devlin Full Kit"} price={90.00} productImage={smokDevlinFullKit} />
+					<ProductSquare title={"Smok GP Baby"} price={60.00} productImage={smokGPBaby}/>
+					<ProductSquare title={"Smok Pen Princess Starter Kit"} price={80.00} productImage={smokPenPrinceStarterKit}/>
+					<ProductSquare title={"Smok Pen Starter Kit"} price={25.00} productImage={smokPenStarterKit}/><ProductSquare title={"Smok Devlin Full Kit"} price={90.00} productImage={smokDevlinFullKit} />
+					<ProductSquare title={"Smok GP Baby"} price={60.00} productImage={smokGPBaby}/>
+					<ProductSquare title={"Smok Pen Princess Starter Kit"} price={80.00} productImage={smokPenPrinceStarterKit}/>
+					<ProductSquare title={"Smok Pen Starter Kit"} price={25.00} productImage={smokPenStarterKit}/>
+				</Grid>
 			</div>
 		);
 	}
